@@ -119,15 +119,90 @@ iterate the post index in the loop.
     - Always add custom style or classes. Don't grab any class or ID with a number. 
     - LINKS github - WP Bootstrap - wp-bootstrap-navwalker
     - Writing everything on the index - you can but it's not a good idea. Make it look pretty enough because it is the default so just incase
-    
-    Template hierarchy
+</p>
+<p>
+Template hierarchy
     - what to render and when. Use the flowchart printed
     - guttenburg
+    - Stuff is a blogging site. -images for posts
+</p>
+<p>
+    the_excerpt(); - cuts down on content [...]
 
+    Post formats
+    -Stuff is a good example of different looking post
+    - seperating out files so it's not on giant if else statement
+    - featured image - should allow user on all posts all in if statement just incase.
+    - decide on completely different files or group video content all together.post
+    - 3 different pages 
+    - static page
+    - page.php
+    - making it easier for clients when they make pages.page
+    - we can't gaureentee user will create user will create page-contact.php or page-9.php - ot won't work
+    - $custom.php -wild card it css
+    -refreshing - change enqeue to '0.2' in array or hard refresh.css
+    - Templates would be eg. map or one column, full width, events page
+    - post(not posts), page
+</p>
+<p>
+    Widgets:
+    -turn on sidebar 
+    -Notes: widgets do not have style, make sure we add our own styles
+    - first turn it on to work
+    - "name" => __('mainsidebar', 'themeslug'
+        is style.css so it only works for this theme
+    -learning to remove default widget. Function reference/unregister widget
+    - some options could look like .. left side bar, right side bar, page that has both. Add remove widgets
+</p>
+<p>
+    Wordpress from scratch
+    - wordpress.org
+    - phpmyadmin - front end database (all pages and posts are stored here)
+    - when putting LIVE don't use root root password.
+    -login lisamaree, password: password
+    - Theme Handbook, read through theme basics of handbook.
+    - index.php if have posts loops
+</p>
+<p>
+    Register Post type
+    - create events in dashboard.
+    - be careful with naming things + files singular event instead of events.
+    - another way of writing a string -x()
+
+    Hieracacial supports
+    - post types could be - staff, portfolio, products (there's a plugin called woocommerce for this)
+    - Always looking for the loop with posts pages - have to make our own loop for events
+
+    - WP_Query - give me events. - Theres lots you can do with wp_query. - is very useful for custom post types.
+    Properties - defaults that properties variables can work in a loop
+    - read what we can get out of the database
+    - can order by - events by file etc Task get by alphabetical order
+    - Remember to view events page (in pages) preview is document link or change events in the slug url.order
+    - Could have portfolio -> categorie portfolio intl_get_error_message
 
 
 </p>
+<p>
+    Theme customization 
+    style, layout, visual things we can see.
+    var_dump() like a console.log
+    use die(); makes screen go white if it's working. 
+    Need these 3 things:
+    Section
+    Setting
+    Control
+    -transport or post message (to change with javascript) dynamically
+    - for image placement, can add grid hard coded
 
+</p>
+<p>
+22 May 2019 
+learning add_meta_box
+- has to be a post - parameters - $id, $title, $callback
+global $metaboxes (you have to say global before being able to call)
+https://codex.wordpress.org/Plugin_API/Action_Reference
+keep adding
+</p>
 
 </body>
 </html>
